@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoginUIView : MonoBehaviour
@@ -25,7 +26,7 @@ public class LoginUIView : MonoBehaviour
 
     protected void OnLoginButtonClick()
     {
-        Debug.Log("Login");
+        SceneManager.LoadScene("GameScene");
     }
 
     protected void OnQuitButtonClick()
